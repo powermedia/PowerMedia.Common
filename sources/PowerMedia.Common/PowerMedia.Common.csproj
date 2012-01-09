@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E43FAF1-B2BD-4EA5-8DAA-6B8774B869F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PowerMedia.Common</RootNamespace>
+    <AssemblyName>PowerMedia.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\CollectionUtils.cs" />
+    <Compile Include="Collections\ImmutableCollections.cs" />
+    <Compile Include="Collections\Pair.cs" />
+    <Compile Include="Collections\StableDictionary.cs" />
+    <Compile Include="Collections\TimedDictionary.cs" />
+    <Compile Include="Data\ByteSize.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\ObjectCache.cs" />
+    <Compile Include="Data\PermutationGenerator.cs" />
+    <Compile Include="Diagnostics\ResultCollectingStopwatch.cs" />
+    <Compile Include="Diagnostics\TimeMeasurer.cs" />
+    <Compile Include="Drawing\ImageUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\DateUtils.cs" />
+    <Compile Include="System\DirectoryUtils.cs" />
+    <Compile Include="System\InvalidStateException.cs" />
+    <Compile Include="System\MathExtensions.cs" />
+    <Compile Include="System\Path.cs" />
+    <Compile Include="System\RandomUtils.cs" />
+    <Compile Include="System\Reflection.cs" />
+    <Compile Include="Text\StringUtils.cs" />
+    <Compile Include="Threading\ThreadUtils.cs" />
+    <Compile Include="Web\Server\HTTPRequest.cs" />
+    <Compile Include="Web\Server\HTTPResponse.cs" />
+    <Compile Include="Web\Server\HTTPResponseHeader.cs" />
+    <Compile Include="Web\Server\HTTPServer.cs" />
+    <Compile Include="Web\Server\StatelessProtocolServer.cs" />
+    <Compile Include="Web\Server\TCPServer.cs" />
+    <Compile Include="Web\WebStreamWrapper.cs" />
+    <Compile Include="XML\XmlGenerator.cs" />
+    <Compile Include="XML\XmlParserUtils.cs" />
+    <Compile Include="XML\XmlTextExtractor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Delegates\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

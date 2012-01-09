@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1095]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_SecondNullArgumentTest</TopNode>
+  <SelectedNode>[0-1117]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.CanSeek_Test</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]D:\refactoring\PowerMedia.Common\PowerMedia.Common.Tests\NunitProject.nunit" Expanded="true">
+      <Nodes>
+        <Node UniqueName="[0-1149]D:\refactoring\PowerMedia.Common\PowerMedia.Common.Tests\bin\Debug\PowerMedia.Common.Tests.dll" Expanded="true">
+          <Nodes>
+            <Node UniqueName="[0-1150]PowerMedia" Expanded="true">
+              <Nodes>
+                <Node UniqueName="[0-1151]PowerMedia.Common" Expanded="true">
+                  <Nodes>
+                    <Node UniqueName="[0-1153]PowerMedia.Common.Collections" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1154]PowerMedia.Common.Collections.Tests" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1003]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests">
+                              <Nodes>
+                                <Node UniqueName="[0-1011]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableArrayList_ModifyTest" />
+                                <Node UniqueName="[0-1012]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableArrayList_OutOfRangeTest" />
+                                <Node UniqueName="[0-1010]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableArrayList_Test" />
+                                <Node UniqueName="[0-1005]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableDictionary_AddTest" />
+                                <Node UniqueName="[0-1007]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableDictionary_ClearTest" />
+                                <Node UniqueName="[0-1008]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableDictionary_ModifyTest" />
+                                <Node UniqueName="[0-1009]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableDictionary_OutOfRangeTest" />
+                                <Node UniqueName="[0-1006]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableDictionary_RemoveTest" />
+                                <Node UniqueName="[0-1004]PowerMedia.Common.Collections.Tests.ImmutableCollectionTests.ImmutableDictionary_Test" />
+                              </Nodes>
+                            </Node>
+                            <Node UniqueName="[0-1021]PowerMedia.Common.Collections.Tests.SetTests">
+                              <Nodes>
+                                <Node UniqueName="[0-1023]PowerMedia.Common.Collections.Tests.SetTests.Set_OutOfRangeTest" />
+                                <Node UniqueName="[0-1022]PowerMedia.Common.Collections.Tests.SetTests.Set_Test" />
+                              </Nodes>
+                            </Node>
+                          </Nodes>
+                        </Node>
+                        <Node UniqueName="[0-1159]PowerMedia.Common.Collections.Utils" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1160]PowerMedia.Common.Collections.Utils.Tests" Expanded="true">
+                              <Nodes>
+                                <Node UniqueName="[0-1107]PowerMedia.Common.Collections.Utils.Tests.ConverterTests">
+                                  <Nodes>
+                                    <Node UniqueName="[0-1110]PowerMedia.Common.Collections.Utils.Tests.ConverterTests.ConvertListElementsClassTypesTest" />
+                                    <Node UniqueName="[0-1108]PowerMedia.Common.Collections.Utils.Tests.ConverterTests.ConvertListElementsNullArgumentTest" />
+                                    <Node UniqueName="[0-1109]PowerMedia.Common.Collections.Utils.Tests.ConverterTests.ConvertListElementsUnconvertableTest" />
+                                  </Nodes>
+                                </Node>
+                              </Nodes>
+                            </Node>
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1152]PowerMedia.Common.Tests" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1001]PowerMedia.Common.Tests.Test">
+                          <Nodes>
+                            <Node UniqueName="[0-1002]PowerMedia.Common.Tests.Test.TestCase" />
+                          </Nodes>
+                        </Node>
+                        <Node UniqueName="[0-1163]PowerMedia.Common.Tests.Threading" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1143]PowerMedia.Common.Tests.Threading.AsynchronousMethodInvokerTests" Expanded="true">
+                              <Nodes>
+                                <Node UniqueName="[0-1148]PowerMedia.Common.Tests.Threading.AsynchronousMethodInvokerTests.EndInvokeTest" />
+                                <Node UniqueName="[0-1146]PowerMedia.Common.Tests.Threading.AsynchronousMethodInvokerTests.HungUpTest" />
+                                <Node UniqueName="[0-1147]PowerMedia.Common.Tests.Threading.AsynchronousMethodInvokerTests.SimultaneusExcecutionPreventionTest" />
+                                <Node UniqueName="[0-1144]PowerMedia.Common.Tests.Threading.AsynchronousMethodInvokerTests.ThreadExistenceTest" />
+                                <Node UniqueName="[0-1145]PowerMedia.Common.Tests.Threading.AsynchronousMethodInvokerTests.ThreadUsingCleanupTest" />
+                              </Nodes>
+                            </Node>
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1157]PowerMedia.Common.Text" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1158]PowerMedia.Common.Text.Tests" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1024]PowerMedia.Common.Text.Tests.StringUtilsTests" Expanded="true">
+                              <Nodes>
+                                <Node UniqueName="[0-1037]PowerMedia.Common.Text.Tests.StringUtilsTests.CanEncodeChar_NullArgumentTest" />
+                                <Node UniqueName="[0-1038]PowerMedia.Common.Text.Tests.StringUtilsTests.CanEncodeChar_Test" />
+                                <Node UniqueName="[0-1040]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertDocumentToHTML_Test" />
+                                <Node UniqueName="[0-1039]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertDocumentToHTML_TestNullArgumentTest" />
+                                <Node UniqueName="[0-1041]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertParameterCollectionToString_NullArgumentTest" />
+                                <Node UniqueName="[0-1042]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertParameterCollectionToString_Test" />
+                                <Node UniqueName="[0-1043]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertParameterCollectionToString_WithNullsArgumentTest" />
+                                <Node UniqueName="[0-1073]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_CompareTest" />
+                                <Node UniqueName="[0-1054]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_AllNullArgumentTest" />
+                                <Node UniqueName="[0-1061]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_ASCIIToUnicodeIllegalCharactersTest" />
+                                <Node UniqueName="[0-1055]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_FirstNullArgumentTest" />
+                                <Node UniqueName="[0-1059]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_SameEncodingIllegalCharactersTest" />
+                                <Node UniqueName="[0-1058]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_SameEncodingTest" />
+                                <Node UniqueName="[0-1056]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_SecondNullArgumentTest" />
+                                <Node UniqueName="[0-1057]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_ThirdNullArgumentTest" />
+                                <Node UniqueName="[0-1060]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_EncodingVersion_UnicodeToASCIITest" />
+                                <Node UniqueName="[0-1062]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_AllNullArgumentTest" />
+                                <Node UniqueName="[0-1069]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_ASCIIToUnicodeIllegalCharactersTest" />
+                                <Node UniqueName="[0-1070]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_BothIllegallEncodingTest" />
+                                <Node UniqueName="[0-1071]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_FirstIllegallEncodingTest" />
+                                <Node UniqueName="[0-1063]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_FirstNullArgumentTest" />
+                                <Node UniqueName="[0-1067]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_SameEncodingIllegalCharactersTest" />
+                                <Node UniqueName="[0-1066]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_SameEncodingTest" />
+                                <Node UniqueName="[0-1072]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_SecondIllegallEncodingTest" />
+                                <Node UniqueName="[0-1064]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_SecondNullArgumentTest" />
+                                <Node UniqueName="[0-1065]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_ThirdNullArgumentTest" />
+                                <Node UniqueName="[0-1068]PowerMedia.Common.Text.Tests.StringUtilsTests.ConvertTextEncoding_NameVersion_UnicodeToASCIITest" />
+                                <Node UniqueName="[0-1047]PowerMedia.Common.Text.Tests.StringUtilsTests.FixWWWContent_ASCIITest" />
+                                <Node UniqueName="[0-1044]PowerMedia.Common.Text.Tests.StringUtilsTests.FixWWWContent_BothNullArgumentTest" />
+                                <Node UniqueName="[0-1045]PowerMedia.Common.Text.Tests.StringUtilsTests.FixWWWContent_FirstNullArgumentTest" />
+                                <Node UniqueName="[0-1048]PowerMedia.Common.Text.Tests.StringUtilsTests.FixWWWContent_Latin1Test" />
+                                <Node UniqueName="[0-1046]PowerMedia.Common.Text.Tests.StringUtilsTests.FixWWWContent_SecondNullArgumentTest" />
+                                <Node UniqueName="[0-1079]PowerMedia.Common.Text.Tests.StringUtilsTests.FormatFullDate_Test" />
+                                <Node UniqueName="[0-1080]PowerMedia.Common.Text.Tests.StringUtilsTests.FormatPrice_DecimalVersionNullArgumentTest" />
+                                <Node UniqueName="[0-1081]PowerMedia.Common.Text.Tests.StringUtilsTests.FormatPrice_DecimalVersionTest" />
+                                <Node UniqueName="[0-1082]PowerMedia.Common.Text.Tests.StringUtilsTests.FormatPrice_FloatVersionNullArgumentTest" />
+                                <Node UniqueName="[0-1083]PowerMedia.Common.Text.Tests.StringUtilsTests.FormatPrice_FloatVersionTest" />
+                                <Node UniqueName="[0-1034]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_ArrayIntConvertTest" />
+                                <Node UniqueName="[0-1029]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_ListIntTest" />
+                                <Node UniqueName="[0-1033]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_ListStringWithEmptyNoCountWithNullsTest" />
+                                <Node UniqueName="[0-1035]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_ListStringWithNullsConverterTest" />
+                                <Node UniqueName="[0-1030]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_ListStringWithNullsTest" />
+                                <Node UniqueName="[0-1032]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_NullArgumentsOnlyTest" />
+                                <Node UniqueName="[0-1031]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_NullArgumentTest" />
+                                <Node UniqueName="[0-1036]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerable_WithEmptyNoCountWithNullsConverterTest" />
+                                <Node UniqueName="[0-1026]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerableRemoveEmptyElements_ListIntTest" />
+                                <Node UniqueName="[0-1027]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerableRemoveEmptyElements_ListStringWithNullsTest" />
+                                <Node UniqueName="[0-1028]PowerMedia.Common.Text.Tests.StringUtilsTests.ImplodeEnumerableRemoveEmptyElements_NullArgumentTest" />
+                                <Node UniqueName="[0-1084]PowerMedia.Common.Text.Tests.StringUtilsTests.MD5_NullArgumentTest" />
+                                <Node UniqueName="[0-1085]PowerMedia.Common.Text.Tests.StringUtilsTests.MD5_Test" />
+                                <Node UniqueName="[0-1050]PowerMedia.Common.Text.Tests.StringUtilsTests.RemoveHtmlTags_NullArgumentTest" />
+                                <Node UniqueName="[0-1049]PowerMedia.Common.Text.Tests.StringUtilsTests.RemoveHtmlTags_Test" />
+                                <Node UniqueName="[0-1086]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_AllNullArgumentTest" />
+                                <Node UniqueName="[0-1087]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_FirstNullArgumentTest" />
+                                <Node UniqueName="[0-1090]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_FourthNullArgumentTest" />
+                                <Node UniqueName="[0-1088]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_SecondNullArgumentTest" />
+                                <Node UniqueName="[0-1092]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_TabAndNewLineTest" />
+                                <Node UniqueName="[0-1091]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_Test" />
+                                <Node UniqueName="[0-1089]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FirstVersion_ThirdNullArgumentTest" />
+                                <Node UniqueName="[0-1100]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_AllNullArgumentTest" />
+                                <Node UniqueName="[0-1105]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_FifthNullArgumentTest" />
+                                <Node UniqueName="[0-1101]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_FirstNullArgumentTest" />
+                                <Node UniqueName="[0-1104]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_FourthNullArgumentTest" />
+                                <Node UniqueName="[0-1102]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_SecondNullArgumentTest" />
+                                <Node UniqueName="[0-1025]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_TabAndNewLineTest" />
+                                <Node UniqueName="[0-1106]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_Test" />
+                                <Node UniqueName="[0-1103]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_FullVersion_ThirdNullArgumentTest" />
+                                <Node UniqueName="[0-1093]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_AllNullArgumentTest" />
+                                <Node UniqueName="[0-1094]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_FirstNullArgumentTest" />
+                                <Node UniqueName="[0-1097]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_FourthNullArgumentTest" />
+                                <Node UniqueName="[0-1095]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_SecondNullArgumentTest" />
+                                <Node UniqueName="[0-1099]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_TabAndNewLineTest" />
+                                <Node UniqueName="[0-1098]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_Test" />
+                                <Node UniqueName="[0-1096]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplaceEnclosedPhrases_SecondVersion_ThirdNullArgumentTest" />
+                                <Node UniqueName="[0-1078]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplacePolishCharacters_JapaneseCharactersNoChangeTest" />
+                                <Node UniqueName="[0-1077]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplacePolishCharacters_JapaneseCharactersTest" />
+                                <Node UniqueName="[0-1076]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplacePolishCharacters_NoChangeTest" />
+                                <Node UniqueName="[0-1074]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplacePolishCharacters_NullArgumentTest" />
+                                <Node UniqueName="[0-1075]PowerMedia.Common.Text.Tests.StringUtilsTests.ReplacePolishCharacters_Test" />
+                                <Node UniqueName="[0-1051]PowerMedia.Common.Text.Tests.StringUtilsTests.TrimDescriptionToSpecifiedLenght_NullArgumentTest" />
+                                <Node UniqueName="[0-1052]PowerMedia.Common.Text.Tests.StringUtilsTests.TrimDescriptionToSpecifiedLength_NoTrimTest" />
+                                <Node UniqueName="[0-1053]PowerMedia.Common.Text.Tests.StringUtilsTests.TrimDescriptionToSpecifiedLength_Test" />
+                              </Nodes>
+                            </Node>
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1161]PowerMedia.Common.Web" Expanded="true">
+                      <Nodes>
+                        <Node UniqueName="[0-1162]PowerMedia.Common.Web.Tests" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1111]PowerMedia.Common.Web.Tests.WebStreamWrapperTests" Expanded="true">
+                              <Nodes>
+                                <Node UniqueName="[0-1112]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.BadUri_Test" />
+                                <Node UniqueName="[0-1117]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.CanSeek_Test" />
+                                <Node UniqueName="[0-1118]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.CanSeek_Without_LastModifiedField_Test" />
+                                <Node UniqueName="[0-1121]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.CanWrite_Test" />
+                                <Node UniqueName="[0-1135]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Close_Test" />
+                                <Node UniqueName="[0-1125]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Flush_Test" />
+                                <Node UniqueName="[0-1119]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Get_Without_LastModifiedField_Test" />
+                                <Node UniqueName="[0-1123]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Length_Test" />
+                                <Node UniqueName="[0-1134]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.PositionGet_Test" />
+                                <Node UniqueName="[0-1133]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.PositionSet_Test" />
+                                <Node UniqueName="[0-1115]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_301Moved_Test" />
+                                <Node UniqueName="[0-1114]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_404Error_Test" />
+                                <Node UniqueName="[0-1138]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_Disconnect_Test" />
+                                <Node UniqueName="[0-1137]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_Suspended15secondsConnection_Test" />
+                                <Node UniqueName="[0-1136]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_Suspended2MinutesConnection_Test" />
+                                <Node UniqueName="[0-1113]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_Test" />
+                                <Node UniqueName="[0-1116]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_WithoutLastModifiedFieldInHTTPHeader_Test" />
+                                <Node UniqueName="[0-1139]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_WithTimeOut_Disconnect_Test" />
+                                <Node UniqueName="[0-1140]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_WithTimeOut_Suspended2MinutesConnection_Test" />
+                                <Node UniqueName="[0-1141]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_WithTimeOutAsInt_Disconnect_Test" />
+                                <Node UniqueName="[0-1142]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Read_WithTimeOutAsInt_Suspended2MinutesConnection_Test" />
+                                <Node UniqueName="[0-1126]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Readbyte_Test" />
+                                <Node UniqueName="[0-1132]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.ReadTimeOut_Test" />
+                                <Node UniqueName="[0-1131]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.ReadTimeOutGet_Test" />
+                                <Node UniqueName="[0-1130]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.ReadTimeOutSet_Test" />
+                                <Node UniqueName="[0-1120]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Seek_Test" />
+                                <Node UniqueName="[0-1124]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.SetLength_Test" />
+                                <Node UniqueName="[0-1122]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.Write_Test" />
+                                <Node UniqueName="[0-1127]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.WriteByte_Test" />
+                                <Node UniqueName="[0-1129]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.WriteTimeOutGet_Test" />
+                                <Node UniqueName="[0-1128]PowerMedia.Common.Web.Tests.WebStreamWrapperTests.WriteTimeOutSet_Test" />
+                              </Nodes>
+                            </Node>
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                    <Node UniqueName="[0-1155]PowerMedia.Common.XML">
+                      <Nodes>
+                        <Node UniqueName="[0-1156]PowerMedia.Common.XML.Tests" Expanded="true">
+                          <Nodes>
+                            <Node UniqueName="[0-1013]PowerMedia.Common.XML.Tests.XmlParserUtilsTests" Expanded="true">
+                              <Nodes>
+                                <Node UniqueName="[0-1016]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.GetDateSafely_Test" />
+                                <Node UniqueName="[0-1017]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.GetDateTimeSafely_Test" />
+                                <Node UniqueName="[0-1019]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.GetDecimalSafely_Test" />
+                                <Node UniqueName="[0-1018]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.GetDoubleSafely_Test" />
+                                <Node UniqueName="[0-1014]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.GetIntSafely_Test" />
+                                <Node UniqueName="[0-1020]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.GetMoneySafely_Test" />
+                                <Node UniqueName="[0-1015]PowerMedia.Common.XML.Tests.XmlParserUtilsTests.NodeValidate_Test" />
+                              </Nodes>
+                            </Node>
+                          </Nodes>
+                        </Node>
+                      </Nodes>
+                    </Node>
+                  </Nodes>
+                </Node>
+              </Nodes>
+            </Node>
+          </Nodes>
+        </Node>
+      </Nodes>
+    </Node>
+  </Nodes>
+</VisualState>
