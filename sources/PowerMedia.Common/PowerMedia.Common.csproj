@@ -35,6 +35,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,6 +52,7 @@
     <Compile Include="Data\ByteSize.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\ObjectCache.cs" />
+    <Compile Include="Data\Pagination.cs" />
     <Compile Include="Data\PermutationGenerator.cs" />
     <Compile Include="Diagnostics\ResultCollectingStopwatch.cs" />
     <Compile Include="Diagnostics\TimeMeasurer.cs" />
@@ -62,6 +65,8 @@
     <Compile Include="System\Path.cs" />
     <Compile Include="System\RandomUtils.cs" />
     <Compile Include="System\Reflection.cs" />
+    <Compile Include="System\Web\ForwardableRoute.cs" />
+    <Compile Include="System\Web\RequestExtensions.cs" />
     <Compile Include="Text\StringUtils.cs" />
     <Compile Include="Threading\ThreadUtils.cs" />
     <Compile Include="Web\Server\HTTPRequest.cs" />
