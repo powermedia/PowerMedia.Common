@@ -15,7 +15,8 @@ namespace PowerMedia.Common.Data
     public class Paginator<T>
     {
         private static readonly uint DEFAULT_ITEMS_PER_PAGE_LIMIT = 20;
-
+        private static readonly uint MAX_NUMBER_OF_PAGES = 30;
+        
         private IEnumerable<T> _collection;
         private PaginationSettings _settings;
         public Paginator(PaginationSettings settings, IEnumerable<T> collection)
@@ -70,7 +71,7 @@ namespace PowerMedia.Common.Data
                     if (_totalPageCount == null)
                     {
                         _totalPageCount = (uint)Math.Ceiling((double)TotalItemsCount / (double)ItemsPerPageLimit);
-                        _totalPageCount = Math.Min(_totalPageCount.Value, 30);
+                        _totalPageCount = Math.Min(_totalPageCount.Value, MAX_NUMBER_OF_PAGES);
                     }
                 }
                 return _totalPageCount.Value;
