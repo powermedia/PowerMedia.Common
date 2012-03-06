@@ -53,6 +53,7 @@
     <Compile Include="Data\ByteSize.cs" />
     <Compile Include="Data\Database.cs" />
     <Compile Include="Data\ObjectCache.cs" />
+    <Compile Include="Data\CollectionContainer.cs" />
     <Compile Include="Data\Pagination.cs" />
     <Compile Include="Data\PermutationGenerator.cs" />
     <Compile Include="Diagnostics\ResultCollectingStopwatch.cs" />
