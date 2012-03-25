@@ -12,7 +12,8 @@ namespace PowerMedia.Common.System
 			uint numberAsUint = (uint)number;
 			return (int)(numberAsUint.Factorial());
 		}
-		
+
+        private static uint[] factorialValues = new uint[] { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600 };
 		public static uint Factorial(this uint number)
 		{
 			if( number < 0 )
@@ -29,8 +30,8 @@ namespace PowerMedia.Common.System
 			{
 				return 1;
 			}
-			
-			return number * Factorial(number - 1);
+
+            return factorialValues[number];
 		}
 		
 		/// <summary>

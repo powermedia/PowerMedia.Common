@@ -8,16 +8,8 @@ namespace PowerMedia.Common.Tests.System
 	[TestFixture]
 	public class MathTests
 	{
-		
-		private UInt64 NaiveFactorial(uint number)
-		{
-			UInt64 accumulator = 1;
-			for(int i = 1 ; i <= number ; ++i)
-			{
-				accumulator*=(UInt64)i;
-			}
-			return accumulator;
-		}
+
+        UInt64[] factorialValues = new UInt64[] { 1, 1, 2, 6, 24, 120, 720, 5040, 40320L, 362880L, 3628800L, 39916800, 479001600L };
 		
 		[Test]
 		public void ArcusFactorial_FullRangeTest()
@@ -26,8 +18,8 @@ namespace PowerMedia.Common.Tests.System
 			{
 			
 				uint arcusFactorial = 		number.ArcusFactorial();
-				UInt64 factorial = 			NaiveFactorial(arcusFactorial);
-				UInt64 factorialOfNext = 	NaiveFactorial(arcusFactorial+1);
+                UInt64 factorial = factorialValues[arcusFactorial];
+                UInt64 factorialOfNext = factorialValues[arcusFactorial + 1];
 				
 				Assert.LessOrEqual	(
 						Math.Abs( (float) factorial 		- number ),
@@ -47,7 +39,7 @@ namespace PowerMedia.Common.Tests.System
 				Assert.That(factorialOfNext>=1);
 				
 				Assert.AreEqual(factorialOfNext, factorial * (number+1) );
-				Assert.AreEqual(factorial, NaiveFactorial((uint)number));
+                Assert.AreEqual(factorial, factorialValues[number]);
 			}
 		}
 		

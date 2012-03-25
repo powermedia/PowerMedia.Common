@@ -10,7 +10,7 @@ namespace PowerMedia.Common.Tests.Data
 	{
 		[Test]
         [Category("Heavy")]
-        [Timeout(2000)]
+        [Timeout(5000)]
         public void TestPermutation()
         {
             List<int> elements = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };

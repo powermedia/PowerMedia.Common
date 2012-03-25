@@ -1,4 +1,6 @@
 sources/PowerMedia.Common.suo
 sources/PowerMedia.Common/bin/
 sources/PowerMedia.Common/obj/
+sources/PowerMedia.Common.Tests/obj/
 destination
+*.pidb
