@@ -9,12 +9,12 @@ namespace PowerMedia.Common.Tests.System
 	public class MathTests
 	{
 
-        UInt64[] factorialValues = new UInt64[] { 1, 1, 2, 6, 24, 120, 720, 5040, 40320L, 362880L, 3628800L, 39916800, 479001600L };
+        UInt64[] factorialValues = new UInt64[] { 1, 1, 2, 6, 24, 120, 720, 5040, 40320L, 362880L, 3628800L, 39916800, 479001600L, 6227020800L };
 		
 		[Test]
 		public void ArcusFactorial_FullRangeTest()
 		{
-			for(uint number = 1; number<= 479001600; number+=129)
+			for(uint number = 1; number<= 479001600; number+=1291)
 			{
 			
 				uint arcusFactorial = 		number.ArcusFactorial();
