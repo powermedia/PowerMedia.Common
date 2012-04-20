@@ -23,16 +23,16 @@ namespace PowerMedia.Common.Data
 
         protected override IEnumerable<T> CalculateItemsOnCurrentPage()
         {
-            var query = "select * " + _sqlQuery;
-            var items =  _context.ExecuteQuery<T>(query);
+            var items =  _context.ExecuteQuery<T>(_sqlQuery);
             var result = items.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber).ToList(); //instantiate
             return result;
         }
 
         protected override uint CalculateTotalItemsCount()
         {
-            var countQuery = "select count(*) " + _sqlQuery;
-            return (uint)_context.ExecuteCommand(countQuery);
+            var items = _context.ExecuteQuery<T>(_sqlQuery);
+            var result = items.LongCount();
+            return (uint)result;
         }
 
     }
