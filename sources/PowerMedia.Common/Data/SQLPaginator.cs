@@ -10,11 +10,6 @@ namespace PowerMedia.Common.Data
     {
         private string _sqlQuery ;
         private DataContext _context;
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="settings"></param>
-        /// <param name="sqlItemsQuery"> without the 'select X' part </param>
         public SQLPaginator(PaginationSettings settings, DataContext context, string sqlItemsQuery) : base(settings)
         {
             _sqlQuery = sqlItemsQuery;
