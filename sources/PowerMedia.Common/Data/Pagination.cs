@@ -19,6 +19,13 @@ namespace PowerMedia.Common.Data
         
         private IEnumerable<T> _collection;
         private PaginationSettings _settings;
+
+        protected Paginator(PaginationSettings settings)
+        {
+            _collection = null;
+            _settings = settings;
+        }
+
         public Paginator(PaginationSettings settings, IEnumerable<T> collection)
         {
             if (collection == null) { throw new ArgumentNullException(); }
@@ -45,7 +52,12 @@ namespace PowerMedia.Common.Data
             }
         }
 
-        uint? _totalItemsCount;
+        protected virtual uint CalculateTotalItemsCount()
+        {
+            return (uint)_collection.Count();
+        }
+
+        private uint? _totalItemsCount;
         private uint TotalItemsCount
         {
             get
@@ -54,7 +66,7 @@ namespace PowerMedia.Common.Data
                 {
                     if (_totalItemsCount == null)
                     {
-                        _totalItemsCount = (uint)_collection.Count();
+                        _totalItemsCount = CalculateTotalItemsCount();
                     }
                 }
                 return _totalItemsCount.Value;
@@ -102,7 +114,7 @@ namespace PowerMedia.Common.Data
             }
         }
 
-        private uint SkipItemsNumber
+        protected uint SkipItemsNumber
         {
             get
             {
@@ -110,7 +122,7 @@ namespace PowerMedia.Common.Data
             }
         }
 
-        private uint TakeItemsNumber
+        protected uint TakeItemsNumber
         {
             get
             {
@@ -118,7 +130,22 @@ namespace PowerMedia.Common.Data
             }
         }
 
-        IEnumerable<T> _itemsOnCurrentPage;
+        protected virtual IEnumerable<T> CalculateItemsOnCurrentPage()
+        {
+            IEnumerable<T> items = new List<T>();
+            if (ItemsPerPageLimit == 0)
+            {
+                items = _collection;
+            }
+            else
+            {
+                items = _collection.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber);
+                items = items.ToList();
+            }
+            return items;
+        }
+
+        private IEnumerable<T> _itemsOnCurrentPage;
         public IEnumerable<T> ItemsOnCurrentPage
         {
             get
@@ -131,12 +158,7 @@ namespace PowerMedia.Common.Data
                 {
                     if (_itemsOnCurrentPage == null)
                     {
-                        if (ItemsPerPageLimit == 0)
-                        {
-                            _itemsOnCurrentPage = _collection;
-                        }
-                        _itemsOnCurrentPage = _collection.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber);
-                        _itemsOnCurrentPage = _itemsOnCurrentPage.ToList();
+                        _itemsOnCurrentPage = CalculateItemsOnCurrentPage();
                     }
                 }
                 return _itemsOnCurrentPage;

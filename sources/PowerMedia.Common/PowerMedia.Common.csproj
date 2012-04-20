@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -56,6 +57,7 @@
     <Compile Include="Data\CollectionContainer.cs" />
     <Compile Include="Data\Pagination.cs" />
     <Compile Include="Data\PermutationGenerator.cs" />
+    <Compile Include="Data\SQLPaginator.cs" />
     <Compile Include="Diagnostics\ResultCollectingStopwatch.cs" />
     <Compile Include="Diagnostics\TimeMeasurer.cs" />
     <Compile Include="Drawing\ImageUtils.cs" />
