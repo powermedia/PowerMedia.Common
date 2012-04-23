@@ -9,10 +9,12 @@ namespace PowerMedia.Common.Data
     public class SQLPaginator<T> : Paginator<T>
     {
         private string _sqlQuery ;
+        private string _sqlCountQuery;
         private DataContext _context;
-        public SQLPaginator(PaginationSettings settings, DataContext context, string sqlItemsQuery) : base(settings)
+        public SQLPaginator(PaginationSettings settings, DataContext context, string sqlItemsQuery, string sqlCountQuery) : base(settings)
         {
             _sqlQuery = sqlItemsQuery;
+            _sqlCountQuery = sqlCountQuery;
             _context = context;
         }
 
@@ -25,8 +27,9 @@ namespace PowerMedia.Common.Data
 
         protected override uint CalculateTotalItemsCount()
         {
-            var items = _context.ExecuteQuery<T>(_sqlQuery);
-            var result = items.LongCount();
+
+            var counts = _context.ExecuteQuery<int>(_sqlCountQuery);
+            var result = counts.First();
             return (uint)result;
         }
 
