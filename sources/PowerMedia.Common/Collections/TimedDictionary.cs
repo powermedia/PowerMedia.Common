@@ -22,6 +22,8 @@ namespace PowerMedia.Common.Collections
         public TimedDictionary(TimeSpan elementExpiractionTime)
         {
             ElementExpirationTime = elementExpiractionTime;
+            _storage = new Dictionary<KeyType, ElementType>();
+            _expirationTimes = new Dictionary<KeyType, DateTime>();
         }
 
 
