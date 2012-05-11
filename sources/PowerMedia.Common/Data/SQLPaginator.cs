@@ -11,17 +11,30 @@ namespace PowerMedia.Common.Data
         private string _sqlQuery ;
         private string _sqlCountQuery;
         private DataContext _context;
-        public SQLPaginator(PaginationSettings settings, DataContext context, string sqlItemsQuery, string sqlCountQuery) : base(settings)
+        private IEnumerable<T> _items;
+        Func<IEnumerable<T>, IEnumerable<T>> _filter;
+
+        public SQLPaginator(PaginationSettings settings, DataContext context, string sqlItemsQuery, string sqlCountQuery, Func<IEnumerable<T>, IEnumerable<T>> inMemoryFilter = null) 
+            : base(settings)
         {
             _sqlQuery = sqlItemsQuery;
             _sqlCountQuery = sqlCountQuery;
             _context = context;
+            _filter = inMemoryFilter;
         }
 
         protected override IEnumerable<T> CalculateItemsOnCurrentPage()
         {
-            var items =  _context.ExecuteQuery<T>(_sqlQuery);
-            var result = items.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber).ToList(); //instantiate
+            if (_items == null)
+            {
+                _items =  _context.ExecuteQuery<T>(_sqlQuery);
+                if (_filter != null)
+                {
+                    _items = _filter(_items);
+                }
+            }
+
+            var result = _items.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber).ToList(); //instantiate
             return result;
         }
 
