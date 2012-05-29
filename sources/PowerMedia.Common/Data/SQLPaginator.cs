@@ -34,8 +34,15 @@ namespace PowerMedia.Common.Data
                 }
             }
 
-            var result = _items.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber).ToList(); //instantiate
-            return result;
+            if (ItemsPerPageLimit == 0)
+            {
+                return _items;
+            }
+            else
+            {
+                var result = _items.Skip((int)SkipItemsNumber).Take((int)TakeItemsNumber).ToList(); //instantiate
+                return result;
+            }
         }
 
         protected override uint CalculateTotalItemsCount()

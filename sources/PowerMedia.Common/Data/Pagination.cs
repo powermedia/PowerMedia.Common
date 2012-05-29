@@ -37,7 +37,7 @@ namespace PowerMedia.Common.Data
             _collection = collection;
         }
 
-        private uint ItemsPerPageLimit
+        protected uint ItemsPerPageLimit
         {
             get
             {
@@ -164,6 +164,5 @@ namespace PowerMedia.Common.Data
                 return _itemsOnCurrentPage;
             }
         }
-
     }
 }
