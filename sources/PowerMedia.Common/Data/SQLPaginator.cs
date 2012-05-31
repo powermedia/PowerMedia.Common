@@ -47,10 +47,19 @@ namespace PowerMedia.Common.Data
 
         protected override uint CalculateTotalItemsCount()
         {
-
-            var counts = _context.ExecuteQuery<int>(_sqlCountQuery);
-            var result = counts.First();
-            return (uint)result;
+            if (_filter == null)
+            {
+                var counts = _context.ExecuteQuery<int>(_sqlCountQuery);
+                var result = counts.First();
+                return (uint)result;
+            }
+            else
+            {
+                // TODO this might not be the optimal solution, but it's correct
+                _items = _context.ExecuteQuery<T>(_sqlQuery);
+                _items = _filter(_items);
+                return (uint)_items.Count();
+            }
         }
 
     }
