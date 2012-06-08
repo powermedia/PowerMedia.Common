@@ -50,6 +50,7 @@
     <Compile Include="Collections\ImmutableCollections.cs" />
     <Compile Include="Collections\Pair.cs" />
     <Compile Include="Collections\StableDictionary.cs" />
+    <Compile Include="Collections\StaticDictionary.cs" />
     <Compile Include="Collections\TimedDictionary.cs" />
     <Compile Include="Data\ByteSize.cs" />
     <Compile Include="Data\Database.cs" />
