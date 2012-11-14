@@ -507,6 +507,18 @@ namespace PowerMedia.Common.Text
             return dateStr;
         }
 
+        public static string FormatDateTime(DateTime dateTime)
+        {
+            string dateStr = dateTime.ToString("yyyy-MM-dd HH:mm:ss", PolishCulture.DateTimeFormat);
+            return dateStr;
+        }
+
+        public static string FormatDate(DateTime dateTime)
+        {
+            string dateStr = dateTime.Date.ToString("yyyy-MM-dd", PolishCulture.DateTimeFormat);
+            return dateStr;
+        }
+
         public static string FormatPrice(decimal price, string paymentCurrency)
         {
             if (paymentCurrency == null)
