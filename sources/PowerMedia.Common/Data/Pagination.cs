@@ -9,6 +9,7 @@ namespace PowerMedia.Common.Data
     public class PaginationSettings
     {
         public uint? ItemsPerPageLimit;
+        public uint? MaxNumberOfPages;
         public uint? CurrentPageNumber;
     }
 
@@ -52,6 +53,17 @@ namespace PowerMedia.Common.Data
             }
         }
 
+        protected uint MaxNumberOfPages
+        {
+            get
+            {
+                if (_settings.MaxNumberOfPages == null)
+                    return MAX_NUMBER_OF_PAGES;
+                else
+                    return _settings.MaxNumberOfPages.Value;
+            }
+        }
+
         protected virtual uint CalculateTotalItemsCount()
         {
             return (uint)_collection.Count();
@@ -83,7 +95,7 @@ namespace PowerMedia.Common.Data
                     if (_totalPageCount == null)
                     {
                         _totalPageCount = (uint)Math.Ceiling((double)TotalItemsCount / (double)ItemsPerPageLimit);
-                        _totalPageCount = Math.Min(_totalPageCount.Value, MAX_NUMBER_OF_PAGES);
+                        _totalPageCount = Math.Min(_totalPageCount.Value, MaxNumberOfPages);
                     }
                 }
                 return _totalPageCount.Value;
