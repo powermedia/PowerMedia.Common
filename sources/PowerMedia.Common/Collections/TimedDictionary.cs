@@ -168,6 +168,18 @@ namespace PowerMedia.Common.Collections
         }
 
         /// <summary>
+        /// Determines whether the <see cref="T:System.Collections.Generic.IDictionary`2"/> contains an Element with the specified key that is not yet expired.
+        /// </summary>
+        /// <returns>
+        /// true if the <see cref="T:System.Collections.Generic.IDictionary`2"/> contains a valid Element with the key; otherwise, false.
+        /// </returns>
+        /// <param name="key">The key to locate in the <see cref="T:System.Collections.Generic.IDictionary`2"/>.</param><exception cref="T:System.ArgumentNullException"><paramref name="key"/> is null.</exception>
+        public bool IsValidKey(KeyType key)
+        {
+            return ContainsKey(key) && _expirationTimes[key] >= DateTime.Now;
+        }
+
+        /// <summary>
         /// Adds an Element with the provided key and value to the <see cref="T:System.Collections.Generic.IDictionary`2"/>.
         /// </summary>
         /// <param name="key">The object to use as the key of the Element to add.</param><param name="value">The object to use as the value of the Element to add.</param><exception cref="T:System.ArgumentNullException"><paramref name="key"/> is null.</exception><exception cref="T:System.ArgumentException">An Element with the same key already exists in the <see cref="T:System.Collections.Generic.IDictionary`2"/>.</exception><exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IDictionary`2"/> is read-only.</exception>
