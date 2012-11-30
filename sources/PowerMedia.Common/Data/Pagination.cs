@@ -111,10 +111,12 @@ namespace PowerMedia.Common.Data
             get
             {
                 uint pageNumberCandidate = 1;
-                if (_settings.CurrentPageNumber.HasValue) { pageNumberCandidate = _settings.CurrentPageNumber.Value; }
+                if (_settings.CurrentPageNumber.HasValue && _settings.CurrentPageNumber > 1) { pageNumberCandidate = _settings.CurrentPageNumber.Value; }
 
                 //normalize in case some items gone missing between requests
                 pageNumberCandidate = Math.Min(pageNumberCandidate, TotalPageCount);
+                if (pageNumberCandidate == 0)
+                    return 1;
                 return pageNumberCandidate;
             }
         }
@@ -140,7 +142,7 @@ namespace PowerMedia.Common.Data
             get
             {
                 if (CurrentPageNumber == 1)
-                    return ItemsPerPageLimit;
+                    return Math.Min(ItemsPerPageLimit, MaxRecords);
                 uint skippedItems = (CurrentPageNumber - 1) * ItemsPerPageLimit;
                 if (MaxRecords <= skippedItems)
                     return ItemsPerPageLimit;
