@@ -94,9 +94,14 @@ namespace PowerMedia.Common.Data
                 {
                     if (_totalPageCount == null)
                     {
-                        uint total = (uint)Math.Ceiling((double)TotalItemsCount / (double)ItemsPerPageLimit);
-                        uint fromParam = (uint)Math.Ceiling((double)MaxRecords / (double)ItemsPerPageLimit);
-                        _totalPageCount = Math.Min(total, fromParam);
+                        if (MaxRecords == 0)
+                            _totalPageCount = (uint)Math.Ceiling((double)TotalItemsCount / (double)ItemsPerPageLimit);
+                        else
+                        {
+                            uint total = (uint)Math.Ceiling((double)TotalItemsCount / (double)ItemsPerPageLimit);
+                            uint fromParam = (uint)Math.Ceiling((double)MaxRecords / (double)ItemsPerPageLimit);
+                            _totalPageCount = Math.Min(total, fromParam);
+                            }
                     }
                 }
                 return _totalPageCount.Value;
@@ -142,7 +147,12 @@ namespace PowerMedia.Common.Data
             get
             {
                 if (CurrentPageNumber == 1)
-                    return Math.Min(ItemsPerPageLimit, MaxRecords);
+                {
+                    if (MaxRecords == 0)
+                        return ItemsPerPageLimit;
+                    else
+                        return Math.Min(ItemsPerPageLimit, MaxRecords);
+                }
                 uint skippedItems = (CurrentPageNumber - 1) * ItemsPerPageLimit;
                 if (MaxRecords <= skippedItems)
                     return ItemsPerPageLimit;
