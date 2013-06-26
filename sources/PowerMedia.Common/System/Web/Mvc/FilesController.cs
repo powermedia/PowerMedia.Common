@@ -74,13 +74,6 @@ namespace PowerMedia.Common.System.Web.Mvc
             {
                 _lenght = lenght;
             }
-
-
-            protected override void WriteFile(HttpResponseBase response)
-            {
-                response.AddHeader("content-type", "video/webm");
-                base.WriteFile(response);
-            }
         }
 
         private SystemMVC.ActionResult GetActionResult(string hash, bool streaming)
